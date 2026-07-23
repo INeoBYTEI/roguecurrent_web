@@ -1,191 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Overdrive — Rogue Current</title>
-<meta name="description" content="Project Overdrive is the flagship, in-development title from independent studio Rogue Current.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308090b'/%3E%3Cpath d='M4 18h5l3-9 6 16 3-9h7' stroke='%2334e6e0' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Project Overdrive | Rogue Current</title>
+
+  <meta
+    name="description"
+    content="Project Overdrive is a high-speed sci-fi action game from independent game studio Rogue Current."
+  >
+
+  <meta
+    name="referrer"
+    content="strict-origin-when-cross-origin"
+  >
+
+  <link
+    rel="icon"
+    href="img/logo.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Questrial&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
 </head>
+
 <body>
 
-<header class="site-header">
-  <a href="index.html" class="logo">
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="logo-mark-line" d="M4 18h5l3-9 6 16 3-9h7" stroke="#34e6e0" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    Rogue Current
-  </a>
-  <nav class="nav-links">
-    <a href="index.html#games" class="is-active">Games</a>
-    <a href="index.html#contact">Contact</a>
-    <a href="press-kit.html">Press Kit</a>
-  </nav>
-  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-</header>
+  <!-- ================= HEADER ================= -->
 
-<!-- ================= HERO ================= -->
-<section class="hero" style="min-height: 92vh;">
-  <div class="hero-bg">
-    <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <radialGradient id="glow2" cx="30%" cy="30%" r="60%">
-          <stop offset="0%" stop-color="#34e6e0" stop-opacity="0.2"/>
-          <stop offset="100%" stop-color="#34e6e0" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-      <rect width="1600" height="900" fill="#08090b"/>
-      <rect width="1600" height="900" fill="url(#glow2)"/>
-      <g stroke="#152a29" stroke-width="1">
-        <line x1="0" y1="180" x2="1600" y2="180"/>
-        <line x1="0" y1="360" x2="1600" y2="360"/>
-        <line x1="0" y1="540" x2="1600" y2="540"/>
-        <line x1="0" y1="720" x2="1600" y2="720"/>
-      </g>
-      <path d="M-100 700 L300 700 L360 260 L520 780 L620 460 L760 700 L1700 700" stroke="#34e6e0" stroke-width="1.6" fill="none" opacity="0.6"/>
-    </svg>
-  </div>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img
+        src="img/logo.svg"
+        alt="Rogue Current logo"
+        class="logo-image"
+      >
 
-  <div class="hero-content" style="width:100%;">
-    <a href="index.html#games" class="back-link">← All games</a>
-    <div class="hero-tag"><span class="dot"></span>In development — no release date yet</div>
-    <h1 class="hero-title" style="max-width: none;">Project <span class="accent">Overdrive</span></h1>
-    <p class="hero-sub">Rogue Current's flagship title. Full trailer, screenshots, and store links land here as soon as they're ready — for now, here's what we can share.</p>
+      <span>Rogue Current</span>
+    </a>
 
-    <div style="margin-top: 46px; border: 1px solid var(--border); background: rgba(0,0,0,0.35); max-width: 640px; padding: 4px;">
-      <div style="aspect-ratio: 16/9; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:14px; border: 1px solid var(--border-soft);">
-        <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-          <circle cx="26" cy="26" r="25" stroke="#34e6e0" stroke-width="1.2"/>
-          <path d="M21 17 L37 26 L21 35 Z" fill="#34e6e0"/>
-        </svg>
-        <span style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-faint);">Trailer coming soon</span>
+    <nav class="nav-links">
+      <a href="index.html#games" class="is-active">Games</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="press-kit.html">Press Kit</a>
+    </nav>
+
+    <button
+      class="nav-toggle"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+    >
+      <span></span>
+    </button>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero project-hero">
+    <div class="hero-bg">
+      <img
+        src="img/poster.png"
+        alt=""
+        class="project-hero-image"
+      >
+    </div>
+
+    <div class="hero-content project-hero-content">
+      <a href="index.html#games" class="back-link">
+        ← All games
+      </a>
+
+      <div class="hero-tag">
+        <span class="dot"></span>
+        In development &middot; Release date TBA
+      </div>
+
+      <h1 class="hero-title project-title">
+        Project <span class="accent">Overdrive</span>
+      </h1>
+
+      <p class="hero-sub">
+        Build speed, tear through swarms, and push beyond your limits in
+        high-velocity battles against colossal creatures.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#trailer" class="btn">
+          Watch the trailer
+        </a>
+
+        <a href="press-kit.html" class="btn ghost">
+          View press kit
+        </a>
       </div>
     </div>
-  </div>
-</section>
 
-<svg class="current-line" viewBox="0 0 1200 46" preserveAspectRatio="none">
-  <path d="M0 23 L1200 23"/>
-  <path class="pulse" d="M0 23 L1200 23"/>
-</svg>
-
-<!-- ================= OVERVIEW ================= -->
-<section class="section-pad">
-  <div class="wrap detail-grid">
-    <div class="detail-meta">
-      <div class="stat-row"><span class="label">Developer</span><span class="value">Rogue Current</span></div>
-      <div class="stat-row"><span class="label">Status</span><span class="value">In development</span></div>
-      <div class="stat-row"><span class="label">Platforms</span><span class="value">TBA</span></div>
-      <div class="stat-row"><span class="label">Release</span><span class="value">TBA</span></div>
+    <div class="hero-scroll">
+      <span class="rule"></span>
+      Scroll
     </div>
-    <div class="detail-body">
-      <span class="eyebrow">Overview</span>
-      <p style="margin-top: 22px;">Project Overdrive is the first game out of Rogue Current — the project the whole studio exists to build. It's early. It's the only thing we're working on. And we'd rather show it late than show it half-finished.</p>
-      <p class="muted">This page will fill in with real screenshots, a trailer, platform details, and a release window as development moves forward. Follow the contact links below or check back for updates.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= FEATURES ================= -->
-<section class="section-pad" style="padding-top: 0;">
-  <div class="wrap">
-    <span class="eyebrow">What to expect</span>
-    <div class="feature-list">
-      <div class="feature-item">
-        <span class="num">01</span>
-        <h4>Built for momentum</h4>
-        <p>Designed around a single feeling we're chasing — more on this once we can show it in motion.</p>
+
+  <svg
+    class="current-line"
+    viewBox="0 0 1200 46"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <path d="M0 23 L1200 23"></path>
+    <path class="pulse" d="M0 23 L1200 23"></path>
+  </svg>
+
+
+  <!-- ================= OVERVIEW ================= -->
+
+  <section class="section-pad">
+    <div class="wrap detail-grid">
+
+      <div class="detail-meta">
+        <div class="stat-row">
+          <span class="label">Developer</span>
+          <span class="value">Rogue Current</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Genre</span>
+          <span class="value">Sci-fi action</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Players</span>
+          <span class="value">Single-player</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Status</span>
+          <span class="value">In development</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Platforms</span>
+          <span class="value">TBA</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Release</span>
+          <span class="value">TBA</span>
+        </div>
       </div>
-      <div class="feature-item">
-        <span class="num">02</span>
-        <h4>One team, one focus</h4>
-        <p>No live-service roadmap, no side projects. Every decision goes toward this one game.</p>
+
+
+      <div class="detail-body">
+        <span class="eyebrow">Overview</span>
+
+        <p style="margin-top: 22px;">
+          Project Overdrive is a high-speed sci-fi action game built around
+          momentum. Tear through hostile swarms, shift into higher gears, and
+          transform movement into power while battling the colossal Spineback.
+        </p>
+
+        <p>
+          Every kill feeds your speed. Every gear makes you deadlier. Chain
+          together parkour, attacks, and evasive movement to reach Overdrive
+          and launch devastating assaults against enemies many times your size.
+        </p>
+
+        <p class="muted">
+          Project Overdrive is the first title from Rogue Current and is
+          currently in active development.
+        </p>
       </div>
-      <div class="feature-item">
-        <span class="num">03</span>
-        <h4>More soon</h4>
-        <p>Features, art, and audio details are on their way as we lock down what ships.</p>
+
+    </div>
+  </section>
+
+
+  <!-- ================= FEATURES ================= -->
+
+  <section class="section-pad" style="padding-top: 0;">
+    <div class="wrap">
+      <span class="eyebrow">What to expect</span>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <span class="num">01</span>
+
+          <h4>Momentum is power</h4>
+
+          <p>
+            Build speed through movement and combat, shift into higher gears,
+            and turn momentum into overwhelming force.
+          </p>
+        </div>
+
+
+        <div class="feature-item">
+          <span class="num">02</span>
+
+          <h4>Never stop moving</h4>
+
+          <p>
+            Sprint, leap, wall-run, evade incoming attacks, and carve a path
+            through swarms without surrendering your pace.
+          </p>
+        </div>
+
+
+        <div class="feature-item">
+          <span class="num">03</span>
+
+          <h4>Face the colossal</h4>
+
+          <p>
+            Survive arena-shaking attacks and use your accumulated speed to
+            strike at creatures that tower over the battlefield.
+          </p>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= GALLERY ================= -->
-<section class="section-pad" style="padding-top: 0;">
-  <div class="wrap">
-    <span class="eyebrow">Gallery</span>
-    <div class="gallery">
-      <figure>
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="300" fill="#0d1013"/>
-          <g stroke="#1c6f6b" stroke-width="1" opacity="0.6">
-            <line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="200" x2="400" y2="200"/>
-          </g>
-          <path d="M-20 200 L140 200 L180 90 L240 250 L300 140 L420 140" stroke="#34e6e0" stroke-width="1.6" fill="none"/>
-        </svg>
-        <figcaption>Key art — 01 / placeholder</figcaption>
-      </figure>
-      <figure>
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="300" fill="#0d1013"/>
-          <g stroke="#1c6f6b" stroke-width="1" opacity="0.6">
-            <line x1="130" y1="0" x2="130" y2="300"/><line x1="270" y1="0" x2="270" y2="300"/>
-          </g>
-          <circle cx="200" cy="150" r="60" stroke="#34e6e0" stroke-width="1.4" fill="none"/>
-          <circle cx="200" cy="150" r="4" fill="#8ffcf6"/>
-        </svg>
-        <figcaption>Key art — 02 / placeholder</figcaption>
-      </figure>
-      <figure>
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="300" fill="#0d1013"/>
-          <path d="M0 260 L80 180 L160 230 L240 110 L320 190 L400 60" stroke="#34e6e0" stroke-width="1.6" fill="none" opacity="0.8"/>
-          <path d="M0 200 L100 240 L200 150 L300 210 L400 130" stroke="#1c6f6b" stroke-width="1" fill="none"/>
-        </svg>
-        <figcaption>Key art — 03 / placeholder</figcaption>
-      </figure>
+
+  <!-- ================= TRAILER ================= -->
+
+  <section class="section-pad trailer-section" id="trailer">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Official trailer</span>
+          <h2>See it in motion</h2>
+        </div>
+
+        <p class="lede">
+          Speed is difficult to explain politely. It is much easier to show it
+          tearing across the screen.
+        </p>
+      </div>
+
+      <div class="trailer-shell">
+        <div class="trailer-embed">
+          <iframe
+            src="https://www.youtube.com/embed/3lTF1w38mug?rel=0&playsinline=1"
+            title="Project Overdrive official trailer"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="trailer-actions">
+        <a
+          href="https://www.youtube.com/watch?v=3lTF1w38mug"
+          class="btn ghost"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch on YouTube ↗
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<svg class="current-line" viewBox="0 0 1200 46" preserveAspectRatio="none">
-  <path d="M0 23 L1200 23"/>
-  <path class="pulse" d="M0 23 L1200 23" style="animation-delay:-3.2s;"/>
-</svg>
 
-<!-- ================= CONTACT STRIP ================= -->
-<section class="contact section-pad">
-  <div class="wrap contact-grid">
-    <div>
-      <span class="eyebrow">Stay in the loop</span>
-      <h2 style="margin-top:16px; font-size: clamp(28px,4vw,42px); text-transform: uppercase; max-width: 14ch;">Want updates on Overdrive?</h2>
-      <p style="margin-top:18px; max-width: 40ch;">Reach out and we'll make sure you hear about news, media, and release details first.</p>
+  <svg
+    class="current-line"
+    viewBox="0 0 1200 46"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <path d="M0 23 L1200 23"></path>
+
+    <path
+      class="pulse"
+      d="M0 23 L1200 23"
+      style="animation-delay: -3.2s;"
+    ></path>
+  </svg>
+
+
+  <!-- ================= MEDIA ================= -->
+
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Media</span>
+          <h2>Official key art</h2>
+        </div>
+
+        <p class="lede">
+          Project Overdrive key art for coverage, articles, and media use.
+        </p>
+      </div>
+
+      <div class="gallery project-gallery">
+        <figure>
+          <img
+            src="img/poster.png"
+            alt="Official Project Overdrive key art"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Project Overdrive &middot; Official key art
+          </figcaption>
+        </figure>
+      </div>
+
+      <div style="margin-top: 28px;">
+        <a
+          href="img/poster.png"
+          class="btn ghost"
+          download
+        >
+          Download key art
+        </a>
+      </div>
     </div>
-    <div class="contact-links">
-      <a class="contact-link" href="mailto:hello@roguecurrent.studio">hello@roguecurrent.studio <span class="arrow">↗</span></a>
-      <a class="contact-link" href="press-kit.html">Press Kit <span class="arrow">↗</span></a>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="contact section-pad">
+    <div class="wrap contact-grid">
+
+      <div>
+        <span class="eyebrow">Get in touch</span>
+
+        <h2
+          style="
+            margin-top: 16px;
+            font-size: clamp(28px, 4vw, 42px);
+            text-transform: uppercase;
+            max-width: 14ch;
+          "
+        >
+          Want to know more?
+        </h2>
+
+        <p style="margin-top: 18px; max-width: 42ch;">
+          For press coverage, collaboration, or questions about Project
+          Overdrive, contact Rogue Current directly.
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a
+          class="contact-link"
+          href="mailto:hello@roguecurrent.studio"
+        >
+          hello@roguecurrent.studio
+          <span class="arrow">↗</span>
+        </a>
+
+        <a
+          class="contact-link"
+          href="mailto:press@roguecurrent.studio"
+        >
+          press@roguecurrent.studio
+          <span class="arrow">↗</span>
+        </a>
+
+        <a
+          class="contact-link"
+          href="press-kit.html"
+        >
+          Press Kit
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="site-footer">
-  <div class="foot-logo">
-    <svg viewBox="0 0 32 32" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="logo-mark-line" d="M4 18h5l3-9 6 16 3-9h7" stroke="#4d5c5b" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    Rogue Current — © 2026
-  </div>
-  <div class="foot-links">
-    <a href="index.html#games">Games</a>
-    <a href="index.html#contact">Contact</a>
-    <a href="press-kit.html">Press Kit</a>
-  </div>
-</footer>
 
-<script src="js/script.js"></script>
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+    <div class="foot-logo">
+      <img
+        src="img/logo.svg"
+        alt=""
+        class="footer-logo-image"
+      >
+
+      <span>Rogue Current &middot; &copy; 2026</span>
+    </div>
+
+    <div class="foot-links">
+      <a href="index.html#games">Games</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="press-kit.html">Press Kit</a>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
