@@ -329,7 +329,7 @@ p { color: var(--text-muted); }
 @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
 
 .hero-title {
-  font-size: clamp(48px, 9vw, 90px);
+  font-size: clamp(48px, 9vw, 64px);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   max-width: 18h;
